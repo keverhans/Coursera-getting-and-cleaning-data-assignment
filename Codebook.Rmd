@@ -1,0 +1,25 @@
+---
+title: "CodeBook"
+author: "Hans De Jonghe"
+date: "23 oktober 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Codebook
+
+Dataset contains altered data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, where a complete description of the variables can be found.
+
+This dataset contains the following variables: 
+
+* subjectNum: Identificator of the subject 1-30 
+* activityNum: Identificator of the activity 1-6 
+* activityName - Corresponding Activity name 
+
+The following variables with all combinations of coordinates X,Y,Z and stdev and mean. 
+tBodyAcc-XYZ tGravityAcc-XYZ tBodyAccJerk-XYZ tBodyGyro-XYZ tBodyGyroJerk-XYZ tBodyAccMag tGravityAccMag tBodyAccJerkMag tBodyGyroMag tBodyGyroJerkMag fBodyAcc-XYZ fBodyAccJerk-XYZ fBodyGyro-XYZ fBodyAccMag fBodyAccJerkMag fBodyGyroMag fBodyGyroJerkMag 
+
+The grouped dataset ("groupData") contains the same variables, but except the labels (activityName, activityNum, subjectNum) the values are averages for that activity and subject.
